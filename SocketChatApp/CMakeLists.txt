@@ -14,19 +14,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
-add_executable(SocketChatApp
-  main.cpp
-  mainwindow.cpp
-  mainwindow.h
-  mainwindow.ui
-)
+message("My Project Source: ${PROJECT_SOURCE_DIR}")
 
-add_executable(SocketChatAppClient
-  main.cpp
-  mainwindow.cpp
-  mainwindow.h
-  mainwindow.ui
-)
-
-target_link_libraries(SocketChatApp PRIVATE Qt5::Widgets)
-target_link_libraries(SocketChatAppClient PRIVATE Qt5::Widgets)
+add_subdirectory(${PROJECT_SOURCE_DIR}/src)
