@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 
+#include "eth/socket.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -17,5 +19,6 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    t_SocketConnector m_connector;
 };
 #endif // MAINWINDOW_H
