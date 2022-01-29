@@ -3,7 +3,7 @@
 
 #include <QMainWindow>
 
-#include "eth/socket.h"
+#include "eth/eth_ipc_types.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
